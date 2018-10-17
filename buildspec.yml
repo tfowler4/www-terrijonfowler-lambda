@@ -14,7 +14,7 @@ phases:
       # - npm test
 
       # Compile the source js/css files
-      - npx webpack
+      - npm run build
   post_build:
     commands:
       # Remove existing node_modules to clear dev dependencies
