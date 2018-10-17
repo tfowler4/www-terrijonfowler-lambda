@@ -9,6 +9,10 @@ files:
     destination: /home/ec2-user/node-website/public
   - source: /node_modules
     destination: /home/ec2-user/node-website/node_modules
+  - source: /views
+    destination: /home/ec2-user/node-website/views
+  - source: /dist
+    destination: /home/ec2-user/node-website/dist
 hooks:
   AfterInstall:
     - location: scripts/install_dependencies
