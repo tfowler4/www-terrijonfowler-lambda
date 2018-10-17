@@ -40,16 +40,6 @@
         
         //Route handler
         app.get('/', function(req, res, next){
-            res.send("Middle");
-            next();
-        });
-        
-        app.use('/', function(req, res, next){
-            console.log('End');
-            next();
-        });
-
-        app.get('/components', function(req, res, next){
             res.render('content');
             next();
         });
