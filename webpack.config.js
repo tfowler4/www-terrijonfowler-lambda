@@ -1,7 +1,5 @@
 const path = require('path');
 
-console.log(path.resolve(__dirname, 'dist'));
-console.log(path.resolve(__dirname, 'src'));
 module.exports = {
     entry: './src/js/react.js',
     output: {
