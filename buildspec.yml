@@ -34,3 +34,4 @@ artifacts:
     - node_modules/**/*
     - public/**/*
     - dist/*
+    - views/*
