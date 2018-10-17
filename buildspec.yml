@@ -29,6 +29,7 @@ artifacts:
     - README.md
     - package.json
     - app.js
+    - router.js
     - appspec.yml
     - scripts/*
     - node_modules/**/*

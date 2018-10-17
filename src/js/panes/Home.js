@@ -11,7 +11,7 @@ class Home extends React.Component {
         }
 
         $.ajax({
-            url: 'http://localhost:8080/db/get/profile',
+            url: '/db/get/profile',
             success: function(data) {
                 this.updateProfile(data);
             }.bind(this),

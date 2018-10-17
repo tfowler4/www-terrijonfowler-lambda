@@ -32,25 +32,11 @@
         //To parse json data
         app.use(bodyParser.json());
         
-        //First middleware before response is sent
-        app.use(function(req, res, next){
-            console.log("Start");
-            next();
-         });
-        
         //Route handler
-        app.get('/', function(req, res, next){
-            console.log("Middle");
-            res.render('content');
-            next();
-        });
+        var router = require('./router.js');
+        app.use('/', router);
 
-        app.get('/main', function(req, res, next){
-            res.render('content');
-            next();
-        });
-
-        app.use('/db/get/:collection', function(req, res, next){
+        app.use('/db/get/:collection', function(req, res){
             console.log('api call');
             console.log(req.params.collection);
             
@@ -68,7 +54,7 @@
                     break; 
             }
         });
-        
+
         app.listen(port);
         console.log('Express server listening on port ' + port);
     }
@@ -78,7 +64,7 @@
 
         MongoClient.connect(dbUrl, { useNewUrlParser: true }, function (err, db) {
             handleDatabaseError(err);
-    
+
             launchApplication(db, dbName);
         });
     }
