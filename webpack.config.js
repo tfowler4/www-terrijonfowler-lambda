@@ -29,7 +29,7 @@ module.exports = {
             }
         ]
     },
-    watch: true,
+    watch: false,
     devServer: {
         contentBase: path.join(__dirname, 'dist'),
         compress: true,
