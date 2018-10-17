@@ -7,7 +7,7 @@
     var dbUser = 'admin';
     var dbPass = 'TNk6AOXEfR81VK5j';
     var dbUrl = 'mongodb://' + dbUser + ':' + dbPass + '@cluster0-shard-00-00-0bvuw.mongodb.net:27017,cluster0-shard-00-01-0bvuw.mongodb.net:27017,cluster0-shard-00-02-0bvuw.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true';
-
+console.log('woops');
     connectToDatabase(mongo, dbUrl, dbName);
     
     function launchApplication(db, dbName) {
