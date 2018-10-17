@@ -12,6 +12,9 @@ phases:
     commands:
       # Discover and run unit tests in the 'tests' directory
       # - npm test
+
+      # Compile the source js/css files
+      - npx webpack
   post_build:
     commands:
       # Remove existing node_modules to clear dev dependencies
@@ -19,9 +22,6 @@ phases:
 
       # Install runtime dependencies
       - npm install --production
-
-      # Compile the source js/css files
-      - npx webpack
 artifacts:
   type: zip
   files:
