@@ -1,0 +1,41 @@
+#root-container {
+    padding:0;
+}
+
+#header {
+    opacity:.8;
+}
+
+#menu-items {
+    text-align:right;
+}
+
+#menu-items li {
+    margin:0px 15px 0px 15px;
+}
+
+#menu-items li a:hover {
+    text-decoration:none;
+}
+
+.content-pane {
+    padding-top:20px;
+    text-align:center;
+    vertical-align:middle;
+    display:flex;
+    justify-content:center;
+    align-content:center;
+    flex-direction:column; /* column | row */
+}
+
+.btn-submenu {
+    margin:0px 15px 0px 15px;
+}
+
+.card {
+    background-color:transparent;
+}
+
+.display-1 {
+    font-size:8rem;
+}
