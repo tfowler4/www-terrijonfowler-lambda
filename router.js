@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router({strict: true});
 
 router.get('/main', function(req, res){
-    console.log('/main router');
+    
 });
 
 //export this router to use in our app.js
