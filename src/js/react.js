@@ -118,7 +118,7 @@ import styles from '../css/style.css';
         (function() {
             // 882px hard set for desktop for now
 
-            $('.content-pane').css('height', '938px');
+            $('.content-pane').css('min-height', '938px');
             
             var hash = window.location.hash;
 

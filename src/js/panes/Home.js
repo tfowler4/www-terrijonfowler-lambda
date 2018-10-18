@@ -59,7 +59,7 @@ class Home extends React.Component {
                     
                     <div className="row justify-content-center mb-5">
                         <div className="col-3">
-                            <div className="mx-auto card border-0" style={{width:'18rem'}} data-aos="fade-up" data-aos-delay="450">
+                            <div className="mx-auto card border-0" style={{width:'18rem'}} data-aos="fade-up" data-aos-delay="350">
                                 <div className="mx-auto border border-primary rounded-circle text-center" style={{height:'200px', width:'200px'}}>
                                     <div className="d-table-cell align-middle" style={{height:'200px', width:'200px'}}>
                                         <i className="fa fa-street-view text-primary" style={{fontSize:'100px'}}></i>
@@ -69,7 +69,6 @@ class Home extends React.Component {
                                 <div className="card-body">
                                     <h5 className="card-title">Atlanta, GA</h5>
                                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" className="btn btn-outline-primary">Go somewhere</a>
                                 </div>
                             </div>
                         </div>
@@ -85,13 +84,12 @@ class Home extends React.Component {
                                 <div className="card-body">
                                     <h5 className="card-title">Years of Experience</h5>
                                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" className="btn btn-outline-primary">Go somewhere</a>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-3">
-                            <div className="mx-auto card border-0" style={{width:'18rem'}} data-aos="fade-up" data-aos-delay="450">
+                            <div className="mx-auto card border-0" style={{width:'18rem'}} data-aos="fade-up" data-aos-delay="550">
                                 <div className="mx-auto border border-primary rounded-circle text-center" style={{height:'200px', width:'200px'}}>
                                     <div className="d-table-cell align-middle" style={{height:'200px', width:'200px'}}>
                                         <i className="fa fa-bars text-primary" style={{fontSize:'100px'}}></i>
@@ -101,7 +99,6 @@ class Home extends React.Component {
                                 <div className="card-body">
                                     <h5 className="card-title">Full Stacker</h5>
                                     <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                    <a href="#" className="btn btn-outline-primary">Go somewhere</a>
                                 </div>
                             </div>
                         </div>

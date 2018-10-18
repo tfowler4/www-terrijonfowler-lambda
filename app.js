@@ -42,9 +42,10 @@
             
             switch( req.params.collection ) {
                 case 'profile':
-                    findDataInCollection(db, 'profile-collection', { name: 'Terrijon Fowler'}, res); // use regular expressions to filter, also use other fields  in the object
+                    findDataInCollection(db, 'profile-collection', { name: 'Terrijon Fowler' }, { }, res); // use regular expressions to filter, also use other fields  in the object
                     break;
                 case 'resume':
+                    findDataInCollection(db, 'experience-collection', { }, { order: -1 }, res);
                     break; 
                 case 'portfolio':
                     break; 
@@ -99,18 +100,15 @@
         });
     }
     
-    function findDataInCollection(db, collection, query, callback) {
+    function findDataInCollection(db, collection, query, sortByQuery, callback) {
         console.log('findDataInCollection');
 
         var dbo = db.db(dbName);
 
-        dbo.collection(collection).find(query).toArray(function(err, result) {
+        dbo.collection(collection).find(query).sort(sortByQuery).toArray(function(err, result) {
             handleDatabaseError(err);
             
-            console.log('results');
-            console.log(result);
             callback.send(result);
-            //return results;
         });
     }
 
